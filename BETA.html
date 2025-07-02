@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>VoxLibre</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Estilos -->
+  <link rel="stylesheet" href="Styles/styles.css">
+
+  <!-- Scripts -->
+  <script src="Scripts/script.js" defer></script>
+  <script src="Scripts/subtitulo.js" defer></script>
+  <script src="Scripts/parrafo.js" defer></script>
+  <script src="Scripts/lista.js" defer></script>
+  <script src="Scripts/imagen.js" defer></script>
+  <script src="Scripts/preview.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1><a href="index.html" class="btn">VoxLibre</a></h1>
+    <ul class="menu">
+      <li><button id="btn-preview" class="btn-menu">Preview</button></li>
+      <li><button id="btnMantenimiento01" class="btn-menu">Login</button></li>
+      <li><button id="btnMantenimiento" class="btn-menu">Register</button></li>
+    </ul>
+
+    <!-- Modal de Login -->
+    
+  </header>
+
+  <div class="contenedor">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>Agregar partes</h2>
+      <ul class="accion">
+        <li><button class="btn-accion">Subtitulo</button></li>
+        <li><button class="btn-accion">Imagen</button></li>
+        <li><button class="btn-accion">Parrafo</button></li>
+        <li><button class="btn-accion">Lista</button></li>
+        <li><button class="btn-accion">Lista Ordenada</button></li>
+      </ul>     
+    </aside>
+
+    <!-- Contenido principal -->
+    <main>
+      <section>
+        <!-- Entrada de autor -->
+        <div class="autor-input">
+          <input type="text" class="input-main autor" placeholder="Escribe el autor del artículo">
+          <button class="btn-verde btn-agregar-autor">Agregar Autor</button>
+        </div>
+        <div class="autor-generado" style="display: none;" data-tipo="autor">
+          <p class="autor-texto contenido"></p>
+          <button class="btn-rojo btn-eliminar-autor">Eliminar</button>
+          <button class="btn-naranja btn-editar-autor">Editar</button>
+        </div>
+
+        <!-- Entrada de título -->
+        <div class="titulo-input">
+          <input type="text" class="input-main titulo" placeholder="Escribe el título del artículo">
+          <button class="btn-verde btn-agregar-titulo">Agregar Título</button>
+        </div>
+        <div class="titulo-generado" style="display: none;" data-tipo="titulo">
+          <h1 class="titulo-texto contenido"></h1>
+          <button class="btn-rojo btn-eliminar-titulo">Eliminar</button>
+          <button class="btn-naranja btn-editar-titulo">Editar</button>
+        </div>
+
+        <!-- Contenedor de bloques dinámicos -->
+        <div class="contenido-principal" id="editor-area">
+          <!-- Aquí se agregarán las secciones dinámicamente -->
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <p>Una página para apoyar el periodismo independiente</p>
+  </footer>
+</body>
+</html>

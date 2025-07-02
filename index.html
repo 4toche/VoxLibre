@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VoxLibre - Inicio</title>
+  <link rel="stylesheet" href="Styles/homepage.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <h1>VoxLibre: información sin censura, para una sociedad más consciente.</h1>
+        <p class="subtitulo">Periodismo independiente y contenido crítico en un solo lugar.</p>
+        <a href="#contenido" class="btn">Explorar</a>
+      </div>
+    </div>
+    <!-- Sticky NavBar que aparece al hacer scroll -->
+<nav class="sticky-bar" id="stickyBar">
+  <div class="sticky-content">
+    <span class="logo">VoxLibre</span>
+    <a href="BETA.html" class="btn">Probar Simulador</a>
+  </div>
+</nav>
+
+  </header>
+
+  <main id="contenido">
+    <!-- ¿Qué es VoxLibre? -->
+    <section class="seccion doble">
+      <div class="imagen">
+        <img src="../Assets/microfono.jpg" alt="Qué es VoxLibre">
+      </div>
+      <div class="contenido">
+        <h2>¿Qué es VoxLibre?</h2>
+        <p>VoxLibre es una plataforma de periodismo independiente. Nuestro objetivo es ofrecer contenidos sin censura que promuevan el pensamiento crítico y el derecho a estar informado.</p>
+      </div>
+    </section>
+
+    <!-- Misión y visión -->
+    <section class="mision-vision" id="mision">
+  <div class="mision-container">
+    <div class="mision-texto">
+      <h2>Nuestra misión</h2>
+      <p>En VoxLibre no solo promovemos el derecho a la información, sino que aspiramos a superar las expectativas de quienes buscan la verdad.</p>
+      <p>Construimos una comunidad donde la libertad de expresión, el periodismo responsable y la participación ciudadana son el eje de nuestra misión.</p>
+    </div>
+    <div class="mision-imagen">
+      <img src="Assets/mision.jpg" alt="Imagen misión">
+    </div>
+  </div>
+</section>
+
+<section class="vision" id="vision">
+  <div class="mision-container vision-invertido">
+    <div class="mision-texto">
+      <h2>Nuestra visión</h2>
+      <p>Ser el medio independiente líder en Latinoamérica, promoviendo una sociedad crítica, informada y participativa, donde todas las voces tengan espacio para expresarse con libertad.</p>
+    </div>
+    <div class="mision-imagen">
+      <img src="Assets/vision.jpg" alt="Imagen visión">
+    </div>
+    
+  </div>
+</section>
+
+
+    <!-- ¿Qué problema resolvemos? -->
+    <section class="seccion doble reverso">
+      <div class="contenido">
+        <h2>¿Qué problema resolvemos?</h2>
+        <p>En un entorno donde la verdad se silencia, VoxLibre da voz a lo que importa. Combatimos la desinformación y damos espacio a voces alternativas.</p>
+      </div>
+      <div class="imagen">
+        <img src="../Assets/desinformacion.jpg" alt="Desinformación">
+      </div>
+    </section>
+
+    <!-- Beneficios para lectores -->
+    <section class="seccion doble">
+      <div class="imagen">
+        <img src="../Assets/lectores.jpg" alt="Lectores informados">
+      </div>
+      <div class="contenido">
+        <h2>Beneficios para el lector</h2>
+        <ul>
+          <li>Información sin censura.</li>
+          <li>Noticias desde diversas perspectivas.</li>
+          <li>Acceso gratuito a contenidos críticos.</li>
+          <li>Comunidad informada y reflexiva.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Beneficios para periodistas -->
+    <section class="seccion doble reverso">
+      <div class="contenido">
+        <h2>Beneficios para periodistas</h2>
+        <ul>
+          <li>Espacio seguro para publicar sin censura.</li>
+          <li>Apoyo técnico y editorial.</li>
+          <li>Visibilidad de sus investigaciones.</li>
+        </ul>
+      </div>
+      <div class="imagen">
+        <img src="../Assets/periodista.jpg" alt="Periodistas libres">
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 VoxLibre - Por la libertad de expresión y la verdad informativa.</p>
+  </footer>
+  <script>
+  window.addEventListener("scroll", () => {
+    const stickyBar = document.getElementById("stickyBar");
+    if (window.scrollY > 100) {
+      stickyBar.classList.add("visible");
+    } else {
+      stickyBar.classList.remove("visible");
+    }
+  });
+</script>
+
+</body>
+</html>

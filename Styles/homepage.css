@@ -1,0 +1,225 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.hero {
+  background: linear-gradient(135deg, #1d3557, #457b9d);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 0 20px;
+}
+
+.hero-overlay {
+  width: 100%;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.hero-content {
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+}
+
+.subtitulo {
+  font-size: 1.3rem;
+  margin-bottom: 25px;
+}
+
+.btn {
+  background-color: #2ecc71;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #27ae60;
+}
+
+
+.seccion {
+  padding: 60px 20px;
+  background-color: white;
+}
+
+.seccion.doble {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.seccion.reverso {
+  flex-direction: row-reverse;
+}
+
+.seccion .contenido {
+  flex: 1 1 400px;
+  max-width: 500px;
+}
+
+.seccion .imagen {
+  flex: 1 1 400px;
+  max-width: 500px;
+  text-align: center;
+}
+
+.seccion .imagen img {
+  max-width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  height: auto;
+}
+
+.seccion h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.seccion p,
+.seccion ul li {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.seccion ul {
+  padding-left: 20px;
+}
+
+.seccion.mision {
+  background-color: #eef2f7;
+  text-align: center;
+}
+.mision-vision {
+  background-color: #f5f5f5;
+  padding: 60px 20px;
+}
+
+.mision-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+
+.mision-texto {
+  flex: 1;
+  min-width: 300px;
+}
+
+.mision-texto h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #111;
+  font-weight: 600;
+}
+
+.mision-texto p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.mision-imagen {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.mision-imagen img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.vision {
+  background-color: #eeeeee;
+  padding: 60px 20px;
+}
+
+.vision-invertido {
+  flex-direction: row-reverse;
+}
+
+footer {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+}
+/* Barra sticky */
+/* Barra sticky */
+.sticky-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #0a1f3c;
+  color: white;
+  z-index: 999;
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 20px 0;
+}
+
+.sticky-bar.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.sticky-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sticky-content .logo {
+  font-size: 2rem;         /* Aumentado */
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+/* Estilo general para botones */
+.btn {
+  background-color: #2ecc71; /* verde moderno */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  background-color: #27ae60;
+}
+
+
+
